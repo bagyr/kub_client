@@ -5,11 +5,11 @@ all: test build
 
 .PHONY: build
 build:
-	go build -o bin/kub-client cmd/kub-client/main.go
+	go build -o bin/kub-client github.com/bagyr/kub_client/cmd/server
 
 .PHONY: run
 run:
-	go run cmd/kub-client/main.go
+	go run github.com/bagyr/kub_client/cmd/server
 
 .PHONY: run-race
 run-race:
